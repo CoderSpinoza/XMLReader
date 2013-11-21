@@ -10,7 +10,8 @@
 
 #import <CoreData/CoreData.h>
 
-@interface APPMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface APPMasterViewController : UITableViewController <NSXMLParserDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

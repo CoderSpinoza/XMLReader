@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20279B9183A75BD008B882D /* star_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = C20279B5183A75BD008B882D /* star_empty.png */; };
+		C20279BA183A75BD008B882D /* star_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20279B6183A75BD008B882D /* star_empty@2x.png */; };
+		C20279BB183A75BD008B882D /* star_full.png in Resources */ = {isa = PBXBuildFile; fileRef = C20279B7183A75BD008B882D /* star_full.png */; };
+		C20279BC183A75BD008B882D /* star_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C20279B8183A75BD008B882D /* star_full@2x.png */; };
+		C20279C2183A7826008B882D /* APPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20279C1183A7826008B882D /* APPHomeViewController.m */; };
+		C20279C5183A80AD008B882D /* UIViewController+Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = C20279C4183A80AD008B882D /* UIViewController+Favorite.m */; };
+		C20279C8183A9CF6008B882D /* APPBookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20279C7183A9CF6008B882D /* APPBookmarksViewController.m */; };
+		C20279CA183A9E8D008B882D /* rss_cube.gif in Resources */ = {isa = PBXBuildFile; fileRef = C20279C9183A9E8D008B882D /* rss_cube.gif */; };
+		C20279CC183AC7C5008B882D /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = C20279CB183AC7C5008B882D /* 53-house.png */; };
+		C20279CE183AC809008B882D /* 45-movie-1.png in Resources */ = {isa = PBXBuildFile; fileRef = C20279CD183AC809008B882D /* 45-movie-1.png */; };
 		D694F7FF182B7D5A00C8768A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D694F7FE182B7D5A00C8768A /* Foundation.framework */; };
 		D694F801182B7D5A00C8768A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D694F800182B7D5A00C8768A /* CoreGraphics.framework */; };
 		D694F803182B7D5A00C8768A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D694F802182B7D5A00C8768A /* UIKit.framework */; };
@@ -25,6 +35,7 @@
 		D694F829182B7D5B00C8768A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D694F804182B7D5A00C8768A /* CoreData.framework */; };
 		D694F831182B7D5B00C8768A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D694F82F182B7D5B00C8768A /* InfoPlist.strings */; };
 		D694F833182B7D5B00C8768A /* RssReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D694F832182B7D5B00C8768A /* RssReaderTests.m */; };
+		D694F83F182B8E7F00C8768A /* hotnews.xml in Resources */ = {isa = PBXBuildFile; fileRef = D694F83E182B8E7E00C8768A /* hotnews.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C20279B5183A75BD008B882D /* star_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_empty.png; sourceTree = "<group>"; };
+		C20279B6183A75BD008B882D /* star_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_empty@2x.png"; sourceTree = "<group>"; };
+		C20279B7183A75BD008B882D /* star_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_full.png; sourceTree = "<group>"; };
+		C20279B8183A75BD008B882D /* star_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_full@2x.png"; sourceTree = "<group>"; };
+		C20279C0183A7826008B882D /* APPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPHomeViewController.h; sourceTree = "<group>"; };
+		C20279C1183A7826008B882D /* APPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPHomeViewController.m; sourceTree = "<group>"; };
+		C20279C3183A80AD008B882D /* UIViewController+Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Favorite.h"; sourceTree = "<group>"; };
+		C20279C4183A80AD008B882D /* UIViewController+Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Favorite.m"; sourceTree = "<group>"; };
+		C20279C6183A9CF6008B882D /* APPBookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPBookmarksViewController.h; sourceTree = "<group>"; };
+		C20279C7183A9CF6008B882D /* APPBookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPBookmarksViewController.m; sourceTree = "<group>"; };
+		C20279C9183A9E8D008B882D /* rss_cube.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rss_cube.gif; sourceTree = "<group>"; };
+		C20279CB183AC7C5008B882D /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
+		C20279CD183AC809008B882D /* 45-movie-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "45-movie-1.png"; sourceTree = "<group>"; };
 		D694F7FB182B7D5A00C8768A /* RssReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RssReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D694F7FE182B7D5A00C8768A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D694F800182B7D5A00C8768A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,6 +85,7 @@
 		D694F82E182B7D5B00C8768A /* RssReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RssReaderTests-Info.plist"; sourceTree = "<group>"; };
 		D694F830182B7D5B00C8768A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D694F832182B7D5B00C8768A /* RssReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RssReaderTests.m; sourceTree = "<group>"; };
+		D694F83E182B8E7E00C8768A /* hotnews.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hotnews.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,11 +150,18 @@
 			children = (
 				D694F80F182B7D5A00C8768A /* APPAppDelegate.h */,
 				D694F810182B7D5A00C8768A /* APPAppDelegate.m */,
+				D694F83E182B8E7E00C8768A /* hotnews.xml */,
 				D694F812182B7D5A00C8768A /* Main.storyboard */,
 				D694F818182B7D5A00C8768A /* APPMasterViewController.h */,
 				D694F819182B7D5A00C8768A /* APPMasterViewController.m */,
+				C20279C0183A7826008B882D /* APPHomeViewController.h */,
+				C20279C1183A7826008B882D /* APPHomeViewController.m */,
 				D694F81B182B7D5A00C8768A /* APPDetailViewController.h */,
 				D694F81C182B7D5A00C8768A /* APPDetailViewController.m */,
+				C20279C6183A9CF6008B882D /* APPBookmarksViewController.h */,
+				C20279C7183A9CF6008B882D /* APPBookmarksViewController.m */,
+				C20279C3183A80AD008B882D /* UIViewController+Favorite.h */,
+				C20279C4183A80AD008B882D /* UIViewController+Favorite.m */,
 				D694F81E182B7D5A00C8768A /* Images.xcassets */,
 				D694F815182B7D5A00C8768A /* RssReader.xcdatamodeld */,
 				D694F807182B7D5A00C8768A /* Supporting Files */,
@@ -140,6 +172,13 @@
 		D694F807182B7D5A00C8768A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C20279CD183AC809008B882D /* 45-movie-1.png */,
+				C20279CB183AC7C5008B882D /* 53-house.png */,
+				C20279C9183A9E8D008B882D /* rss_cube.gif */,
+				C20279B5183A75BD008B882D /* star_empty.png */,
+				C20279B6183A75BD008B882D /* star_empty@2x.png */,
+				C20279B7183A75BD008B882D /* star_full.png */,
+				C20279B8183A75BD008B882D /* star_full@2x.png */,
 				D694F808182B7D5A00C8768A /* RssReader-Info.plist */,
 				D694F809182B7D5A00C8768A /* InfoPlist.strings */,
 				D694F80C182B7D5A00C8768A /* main.m */,
@@ -243,9 +282,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20279CC183AC7C5008B882D /* 53-house.png in Resources */,
 				D694F81F182B7D5A00C8768A /* Images.xcassets in Resources */,
+				C20279BC183A75BD008B882D /* star_full@2x.png in Resources */,
+				C20279CA183A9E8D008B882D /* rss_cube.gif in Resources */,
+				C20279B9183A75BD008B882D /* star_empty.png in Resources */,
+				C20279BA183A75BD008B882D /* star_empty@2x.png in Resources */,
+				C20279BB183A75BD008B882D /* star_full.png in Resources */,
 				D694F80B182B7D5A00C8768A /* InfoPlist.strings in Resources */,
+				D694F83F182B8E7F00C8768A /* hotnews.xml in Resources */,
 				D694F814182B7D5A00C8768A /* Main.storyboard in Resources */,
+				C20279CE183AC809008B882D /* 45-movie-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20279C8183A9CF6008B882D /* APPBookmarksViewController.m in Sources */,
 				D694F81A182B7D5A00C8768A /* APPMasterViewController.m in Sources */,
 				D694F81D182B7D5A00C8768A /* APPDetailViewController.m in Sources */,
 				D694F811182B7D5A00C8768A /* APPAppDelegate.m in Sources */,
+				C20279C2183A7826008B882D /* APPHomeViewController.m in Sources */,
 				D694F817182B7D5A00C8768A /* RssReader.xcdatamodeld in Sources */,
+				C20279C5183A80AD008B882D /* UIViewController+Favorite.m in Sources */,
 				D694F80D182B7D5A00C8768A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +527,7 @@
 				D694F838182B7D5B00C8768A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D694F839182B7D5B00C8768A /* Build configuration list for PBXNativeTarget "RssReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +536,7 @@
 				D694F83B182B7D5B00C8768A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

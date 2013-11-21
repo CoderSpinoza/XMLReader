@@ -9,37 +9,34 @@
 #import "APPDetailViewController.h"
 
 @interface APPDetailViewController ()
-- (void)configureView;
+
 @end
 
 @implementation APPDetailViewController
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
-    }
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+    self.textView.text = [NSString stringWithFormat:@"%@", [self.item objectForKey:@"description"]];
+    self.titleTextView.text = [NSString stringWithFormat:@"%@", [self.item objectForKey:@"title"]];
+    
+    if ([self bookmarkContainsItem:self.item]) {
+        self.bookmarkButton.selected = YES;
+    } else {
+        self.bookmarkButton.selected = NO;
+    }
+}
+
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+//    self.titleViewHeightConstraint.constant = self.titleTextView.contentSize.height;
+    
+    self.textViewHeightConstraint.constant = self.textView.contentSize.height;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,4 +45,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)shareButtonPressed:(UIBarButtonItem *)sender {
+    NSString *shareText = self.title;
+    NSArray *shareItems = @[shareText];
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
+    activityViewController.excludedActivityTypes = @[UIActivityTypeAddToReadingList, UIActivityTypeAirDrop, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypePostToFacebook, UIActivityTypePostToFlickr, UIActivityTypePostToTencentWeibo, UIActivityTypePostToVimeo, UIActivityTypePostToWeibo, UIActivityTypePrint, UIActivityTypeSaveToCameraRoll];
+    
+    [self presentViewController:activityViewController animated:YES completion:nil];
+}
+
+- (IBAction)bookmarkButtonPressed {
+    
+    if ([self bookmark:self.item]) {
+        self.bookmarkButton.selected = YES;
+    } else {
+        self.bookmarkButton.selected = NO;
+    }
+}
 @end
